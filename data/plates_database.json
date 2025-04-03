@@ -1,0 +1,146 @@
+{
+    "plates": [
+        {
+            "plate_number": "APP-456CV",
+            "owner": {
+                "name": "John Adebayo",
+                "date_of_birth": "1985-05-12",
+                "age": 40,
+                "address": "15 Marina Street, Lagos",
+                "phone": "080-1234-5678"
+            },
+            "vehicle": {
+                "make": "Toyota",
+                "model": "Camry",
+                "year": 2019,
+                "color": "Black"
+            },
+            "registration": {
+                "date": "2020-01-15",
+                "expiration": "2025-01-14",
+                "status": "Active"
+            },
+            "offenses": [
+                {
+                    "date": "2023-07-22",
+                    "type": "Speeding",
+                    "location": "Lekki Expressway, Lagos",
+                    "fine": "₦25,000"
+                }
+            ],
+            "notes": "Vehicle inspection due in 3 months"
+        },
+        {
+            "plate_number": "LAG-572AA",
+            "owner": {
+                "name": "Amina Ibrahim",
+                "date_of_birth": "1990-11-28",
+                "age": 35,
+                "address": "7B Adeola Odeku Street, Victoria Island, Lagos",
+                "phone": "081-5555-7890"
+            },
+            "vehicle": {
+                "make": "Honda",
+                "model": "Accord",
+                "year": 2021,
+                "color": "Silver"
+            },
+            "registration": {
+                "date": "2021-03-17",
+                "expiration": "2026-03-16",
+                "status": "Active"
+            },
+            "offenses": [],
+            "notes": "No violations recorded"
+        },
+        {
+            "plate_number": "KJA-419DE",
+            "owner": {
+                "name": "Oluwaseun Oladipo",
+                "date_of_birth": "1978-09-05",
+                "age": 47,
+                "address": "24 Challenge Road, Ibadan",
+                "phone": "070-4321-9876"
+            },
+            "vehicle": {
+                "make": "Lexus",
+                "model": "RX350",
+                "year": 2018,
+                "color": "White"
+            },
+            "registration": {
+                "date": "2018-12-10",
+                "expiration": "2023-12-09",
+                "status": "Expired"
+            },
+            "offenses": [
+                {
+                    "date": "2022-05-11",
+                    "type": "Illegal Parking",
+                    "location": "Ring Road, Ibadan",
+                    "fine": "₦10,000"
+                },
+                {
+                    "date": "2023-02-03",
+                    "type": "Driving Without Seatbelt",
+                    "location": "Dugbe Road, Ibadan",
+                    "fine": "₦5,000"
+                }
+            ],
+            "notes": "Registration renewal pending"
+        },
+        {
+            "plate_number": "FCT-703GH",
+            "owner": {
+                "name": "Chinedu Okonkwo",
+                "date_of_birth": "1982-03-17",
+                "age": 43,
+                "address": "Plot 45, Wuse Zone 5, Abuja",
+                "phone": "090-8765-4321"
+            },
+            "vehicle": {
+                "make": "Nissan",
+                "model": "Pathfinder",
+                "year": 2020,
+                "color": "Blue"
+            },
+            "registration": {
+                "date": "2020-08-22",
+                "expiration": "2025-08-21",
+                "status": "Active"
+            },
+            "offenses": [
+                {
+                    "date": "2024-01-30",
+                    "type": "Running Red Light",
+                    "location": "Banex Junction, Abuja",
+                    "fine": "₦15,000"
+                }
+            ],
+            "notes": "Vehicle in good standing"
+        },
+        {
+            "plate_number": "KWR-251ZA",
+            "owner": {
+                "name": "Fatima Suleiman",
+                "date_of_birth": "1995-07-30",
+                "age": 30,
+                "address": "10 Unity Road, Ilorin",
+                "phone": "081-2345-6789"
+            },
+            "vehicle": {
+                "make": "Hyundai",
+                "model": "Tucson",
+                "year": 2022,
+                "color": "Red"
+            },
+            "registration": {
+                "date": "2022-05-15",
+                "expiration": "2027-05-14",
+                "status": "Active"
+            },
+            "offenses": [],
+            "notes": "New registration"
+        }
+    ]
+}

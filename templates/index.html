@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>License Plate Verification System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-car"></i>
+                <h1>License Plate Verifier</h1>
+            </div>
+            <div class="subtitle">
+                <p>University of Ilorin - Build with AI 2025</p>
+            </div>
+        </header>
+
+        <main>
+            <div class="upload-section">
+                <div class="upload-container">
+                    <div id="upload-box">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Drag & Drop license plate image or click to upload</p>
+                        <input type="file" id="plate-image-input" accept="image/png, image/jpeg, image/jpg" hidden>
+                    </div>
+                    <button id="capture-button" class="btn">
+                        <i class="fas fa-camera"></i> Capture
+                    </button>
+                </div>
+                <div class="camera-container" id="camera-container" style="display: none;">
+                    <video id="camera-feed" autoplay></video>
+                    <div class="camera-controls">
+                        <button id="take-photo" class="btn">
+                            <i class="fas fa-camera"></i> Take Photo
+                        </button>
+                        <button id="close-camera" class="btn btn-secondary">
+                            <i class="fas fa-times"></i> Close
+                        </button>
+                    </div>
+                </div>
+                <div id="preview-container" style="display: none;">
+                    <img id="image-preview" src="" alt="License Plate Preview">
+                    <div class="preview-controls">
+                        <button id="verify-button" class="btn">
+                            <i class="fas fa-search"></i> Verify Plate
+                        </button>
+                        <button id="cancel-button" class="btn btn-secondary">
+                            <i class="fas fa-undo"></i> Cancel
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="manual-input-section">
+                <div class="or-divider">
+                    <span>OR</span>
+                </div>
+                <div class="manual-input">
+                    <input type="text" id="plate-number-input" placeholder="Enter license plate number manually" maxlength="10">
+                    <button id="search-button" class="btn">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+            </div>
+
+            <!-- Results Modal -->
+            <div id="results-modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2>Vehicle Information</h2>
+                        <span class="close">&times;</span>
+                    </div>
+                    <div id="results-container" class="modal-body">
+                        <!-- Results will be populated here via JavaScript -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loading Spinner -->
+            <div id="loading-spinner">
+                <div class="spinner"></div>
+                <p>Processing...</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 License Plate Verification System - Workshop Project</p>
+            <p>Presented by Abdulrafiu Izuafa, Senior AI/ML Engineer</p>
+        </footer>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>
